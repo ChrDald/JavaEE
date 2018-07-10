@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+	<class name="model.Customer" table="customer">
+	
+		
+		<id name="id">
+			<column name="id" />	
+			<generator class="assigned" />
+		</id>
+		<property name="email">
+			<column name="email" />
+		</property>
+		<property name="username">
+			<column name="user_name" />
+		</property>
+		<property name="password">
+			<column name="password" />
+		</property>
+		<property name="firstName">
+			<column name="first_name" />
+		</property>
+		<property name="lastName">
+			<column name="last_name" />
+		</property>
+	</class>
+
+</hibernate-mapping> 

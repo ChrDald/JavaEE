@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ipd12.model">
+	<class name="com.ipd12.model.Student3" table="student_test">
+		<id name="studentID">
+			<generator class="uuid" />
+		</id>
+		<property name="username">
+			<column name="user" />
+		</property>
+		<property name="password">
+			<column name="password" />
+		</property>
+		<property name="city">
+			<column name="city" />
+		</property>
+	</class>
+
+</hibernate-mapping> 
